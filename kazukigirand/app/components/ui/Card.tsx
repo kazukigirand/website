@@ -1,13 +1,14 @@
-import { ReactNode } from 'react';
+import { ReactNode, CSSProperties } from 'react';
 
 interface CardProps {
     children: ReactNode;
     className?: string;
     onClick?: () => void;
     hover?: boolean;
+    style?: CSSProperties;
 }
 
-export function Card({ children, className = '', onClick, hover = true }: CardProps) {
+export function Card({ children, className = '', onClick, hover = true, style }: CardProps) {
     return (
         <div
             className={`
@@ -25,6 +26,7 @@ export function Card({ children, className = '', onClick, hover = true }: CardPr
                     onClick();
                 }
             }}
+            style={style}
         >
             {children}
         </div>
