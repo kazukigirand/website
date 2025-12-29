@@ -8,8 +8,6 @@ import { Home, Sigma, Flame, Circle, Palette, Youtube, Languages } from 'lucide-
 const navItems = [
     { href: '/', label: 'Home', icon: <Home size={18} /> },
     { href: '/proofs', label: 'Proofs', icon: <Sigma size={18} /> },
-    { href: '/hyperfixations', label: 'Hyperfixations', icon: <Flame size={18} /> },
-    { href: '/venn', label: 'Venn', icon: <Circle size={18} /> },
     { href: '/art', label: 'Art', icon: <Palette size={18} /> },
     { href: '/youtube', label: 'YouTube', icon: <Youtube size={18} /> },
     { href: '/japanese', label: '日本語', icon: <Languages size={18} /> },
