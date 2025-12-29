@@ -36,11 +36,12 @@ export function Card({ children, className = '', onClick, hover = true, style }:
 interface CardHeaderProps {
     children: ReactNode;
     className?: string;
+    style?: CSSProperties;
 }
 
-export function CardHeader({ children, className = '' }: CardHeaderProps) {
+export function CardHeader({ children, className = '', style }: CardHeaderProps) {
     return (
-        <div className={`mb-4 ${className}`}>
+        <div className={`mb-4 ${className}`} style={style}>
             {children}
         </div>
     );
@@ -49,11 +50,12 @@ export function CardHeader({ children, className = '' }: CardHeaderProps) {
 interface CardTitleProps {
     children: ReactNode;
     className?: string;
+    style?: CSSProperties;
 }
 
-export function CardTitle({ children, className = '' }: CardTitleProps) {
+export function CardTitle({ children, className = '', style }: CardTitleProps) {
     return (
-        <h3 className={`text-xl font-bold text-white ${className}`}>
+        <h3 className={`text-xl font-bold text-white ${className}`} style={style}>
             {children}
         </h3>
     );
@@ -62,11 +64,12 @@ export function CardTitle({ children, className = '' }: CardTitleProps) {
 interface CardDescriptionProps {
     children: ReactNode;
     className?: string;
+    style?: CSSProperties;
 }
 
-export function CardDescription({ children, className = '' }: CardDescriptionProps) {
+export function CardDescription({ children, className = '', style }: CardDescriptionProps) {
     return (
-        <p className={`text-sm text-slate-400 mt-1 ${className}`}>
+        <p className={`text-sm text-slate-400 mt-1 ${className}`} style={style}>
             {children}
         </p>
     );
@@ -75,11 +78,12 @@ export function CardDescription({ children, className = '' }: CardDescriptionPro
 interface CardContentProps {
     children: ReactNode;
     className?: string;
+    style?: CSSProperties;
 }
 
-export function CardContent({ children, className = '' }: CardContentProps) {
+export function CardContent({ children, className = '', style }: CardContentProps) {
     return (
-        <div className={className}>
+        <div className={className} style={style}>
             {children}
         </div>
     );
@@ -88,11 +92,12 @@ export function CardContent({ children, className = '' }: CardContentProps) {
 interface CardFooterProps {
     children: ReactNode;
     className?: string;
+    style?: CSSProperties;
 }
 
-export function CardFooter({ children, className = '' }: CardFooterProps) {
+export function CardFooter({ children, className = '', style }: CardFooterProps) {
     return (
-        <div className={`mt-4 pt-4 border-t border-[var(--border)] ${className}`}>
+        <div className={`mt-4 pt-4 border-t border-[var(--border)] ${className}`} style={style}>
             {children}
         </div>
     );
